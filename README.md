@@ -1,4 +1,5 @@
 # dotfiles
-* .bashrc
-* .vimrc
+* Bash: .bashrc, .bash_profile
+* Vim: .vimrc
+* Tmux: .tmux.conf
 
