@@ -114,3 +114,13 @@ endif
 packadd matchit
 
 set nobackup
+set noswapfile
+set noundofile
+
+" color scheme
+colo darkblue
+" desert, slate, murphy, koehler, ron, darkblue are good ones
+
+" line numbers
+set number
+set numberwidth=5
