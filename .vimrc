@@ -85,10 +85,6 @@ else
 
   set autoindent        " always set autoindenting on
 
-" Set Tabs to 4 spaces
-set tabstop=4
-set expandtab
-
 endif " has("autocmd")
 
 " Convenient command to see the difference between the current buffer and the
@@ -96,7 +92,7 @@ endif " has("autocmd")
 " Only define it when not defined already.
 if !exists(":DiffOrig")
   command DiffOrig vert new | set bt=nofile | r ++edit # | 0d_ | diffthis
-            \ | wincmd p | diffthis
+		  \ | wincmd p | diffthis
 endif
 
 if has('langmap') && exists('+langnoremap')
@@ -118,9 +114,13 @@ set noswapfile
 set noundofile
 
 " color scheme
-colo darkblue
+colo desert
 " desert, slate, murphy, koehler, ron, darkblue are good ones
 
 " line numbers
 set number
 set numberwidth=5
+
+" Set Tabs to 4 spaces
+set tabstop=4
+set expandtab
